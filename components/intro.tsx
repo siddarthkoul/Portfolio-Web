@@ -30,19 +30,18 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-      <Image
-  src={SidImg}
-  alt="Sid portrait"
-  width={192}
-  height={192}
-  quality={100}
-  priority={true}
-  className="h-25 w-21 object-cover border-[0rem] border-white shadow-xl"
-  style={{
-    borderRadius: "26% 74% 60% 40% / 40% 40% 60% 60%  " // Add the specified border radius
-  }}
-/>
-
+            <Image
+              src={SidImg}
+              alt="Sid portrait"
+              width={192}
+              height={192}
+              quality={100}
+              priority={true}
+              className="h-25 w-21 object-cover border-[0rem] border-white shadow-xl"
+              style={{
+                borderRadius: "26% 74% 60% 40% / 40% 40% 60% 60%  ", // Add the specified border radius
+              }}
+            />
           </motion.div>
 
           <motion.span
@@ -66,8 +65,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hey there, I'm Siddarth.</span> <br/>I'm a{" "}
-        <span>Fullstack developer passionate about crafting websites and apps, specializing in React (Next.js).</span>
+        <span className="font-bold">Hey there, I'm Siddarth.</span> <br />
+        I'm a{" "}
+        <span>
+          Fullstack developer passionate about crafting websites and apps,
+          specializing in React (Next.js).
+        </span>
       </motion.h1>
 
       <motion.div
@@ -100,18 +103,20 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://www.linkedin.com/in/siddarthkoul/"
           target="_blank"
         >
+          LinkedIn
           <BsLinkedin />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="https://github.com/siddarthkoul"
           target="_blank"
         >
+          Github
           <FaGithubSquare />
         </a>
       </motion.div>
